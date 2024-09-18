@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 02</title>
+</head>
+<body>
+    <h1>Clase 02</h1>
+    <h2>To do list - Vanilla Js</h2>
+    <ul id="lista"></ul>
+    <form>
+        <input type="text">
+        <button type="submit">Add to do</button>
+        
+    </form>
+
+    <script >
+        const form=document.querySelector("form");
+        const list=document.querySelector("#lista");
+
+        form.addEventListener("submit",(event) =>{
+            event.preventDefault();
+            const li =document.createElement("li")
+            const text = event.target[0].value;
+            li.innerText=text;
+            list.appendChild(li);
+            event.target[0].value="";
+            
+
+        });
+
+    </script>
+</body>
+</html>
