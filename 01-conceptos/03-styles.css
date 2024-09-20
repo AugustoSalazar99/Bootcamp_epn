@@ -1,0 +1,51 @@
+/* root significa todo el documento */
+:root {
+  --background: #0c0c0c;
+  --foreground: #f2f2f2;
+  --primary: #e21d48;
+  --card: #1c1917;
+  --border: #2c2c2c;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.titulo {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+.subtitulo {
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.contenedor {
+  width: fit-content;
+  margin: auto;
+  height: 300px;
+  padding: 20px 40px;
+  background-color: var(--card);
+  border-radius: 10px;
+}
+.input {
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  height: 20px;
+  border-radius: 10px;
+  color: var(--foreground);
+}
+.button{
+    margin-left: 5px;
+    background-color: var(--primary);
+    border: 0px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--foreground);
+}
